@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="302dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="Введите вес груза в тоннах:"
+        android:textColor="#F10A0A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/weightCargo"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:background="#E8ABC0"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#040B8C"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="291dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:text="Нажмите для расчета количества топлива"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightCargo" />
+
+    <TextView
+        android:id="@+id/weightFuel"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:background="#E8ABC0"
+        android:gravity="center"
+        android:textColor="#040B8C"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="291dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:background="#0839ED"
+        android:gravity="center"
+        android:text="Для вывода груза на орбиту Марса Вам необходимо:
+"
+        android:textColor="#FBFBFB"
+
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    >
+</androidx.constraintlayout.widget.ConstraintLayout>
